@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.input-field {
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    color: white;
+    text-align: center;
+}
+
+.login-button {
+    background-color: #4CAF50;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}
+
+.register-button {
+    background-color: #008CBA;
+}
+
+.register-button:hover {
+    background-color: #007bb5;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; /* Apply the new font */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,184 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 1000px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    padding: 15px 30px;
+    margin: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.host-button {
+    background-color: #4CAF50;
+}
+
+.host-button:hover {
+    background-color: #45a049;
+}
+
+.join-button {
+    background-color: #008CBA;
+}
+
+.join-button:hover {
+    background-color: #007bb5;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.backButton {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#leaderboardContainer {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#leaderboard {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#leaderboard li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#playerLeaderboard {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#playerLeaderboard li {
+    transition: all 0.3s ease;
+}
+
+#playerLeaderboard li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@keyframes spotlight {
+    0% { background-position: -100% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* For pulsating effect */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* For rainbow text effect */
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+/* For confetti animation */
+@keyframes confetti-fall {
+    0% { transform: translateY(-100vh) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+/* For celebration container */
+#celebrationContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* For confetti pieces */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    animation: confetti-fall linear forwards;
+}

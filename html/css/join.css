@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    padding: 15px 30px;
+    margin: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.join-button {
+    background-color: #008CBA;
+    display: none; /* Initially hidden */
+    margin: 20px auto; /* Center the button */
+    display: block; /* Make it a block-level element */
+}
+
+.join-button:hover {
+    background-color: #007bb5;
+}
+
+.quiz-code-input {
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow for consistency */
+    background-color: #f0f0f0; /* Match background color */
+    color: #333; /* Match text color */
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}

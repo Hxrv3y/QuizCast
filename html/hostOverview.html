@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Overview</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Host Overview</h1>
+        <div id="quizCodeContainer">
+            <h2>Join Code: <span id="quizCode"></span></h2>
+        </div>
+        <div id="currentQuestionContainer">
+            <h3>Current Question</h3>
+            <div id="currentQuestion">Waiting to start...</div>
+            <button id="endQuestionButton" class="button host-button">End Question</button>
+            <button id="nextQuestionButton" class="button host-button" style="display: none;">Next Question</button>
+            <button id="endQuizButton" class="button host-button">End Quiz</button>
+        </div>
+        <div id="leaderboardContainer">
+            <h3>Leaderboard</h3>
+            <ul id="leaderboard"></ul>
+        </div>
+    </div>
+    <script src="js/hostOverview.js"></script>
+</body>
+</html>

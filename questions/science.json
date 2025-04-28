@@ -1,0 +1,17 @@
+[
+    {
+      "question": "The chemical element with the symbol 'Fe' is more commonly known as what?",
+      "options": ["Gold", "Iron", "Silver"],
+      "correctAnswer": "Iron"
+    },
+    {
+        "question": "What is the chemical symbol for the element oxygen?",
+        "options": ["O", "O2", "O3"],
+        "correctAnswer": "O"
+    },
+    {
+        "question": "What is the chemical symbol for the element gold?",
+        "options": ["Au", "Ag", "Cu"],
+        "correctAnswer": "Au"
+    }
+]

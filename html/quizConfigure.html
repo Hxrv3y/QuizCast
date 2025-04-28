@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure Quiz</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <object type="text/html" data="logoutButton.html" width="100%" height="50px"></object>
+    <div class="container">
+        <h1>Configure Quiz</h1>
+        <form id="quizConfigForm">
+            <input type="text" id="quizTitle" class="input-field" placeholder="Quiz Title" required>
+            <textarea id="quizDescription" class="input-field" placeholder="Quiz Description" required></textarea>
+            <select id="questionSet" class="input-field" required>
+                <option value="" disabled selected>Select Question Set</option>
+            </select>
+            <div>
+                <h3>Winning Sound Playback</h3>
+                <label>
+                    <input type="radio" name="soundPlayback" value="host" checked>
+                    Play sounds on the host's client
+                </label>
+                <label>
+                    <input type="radio" name="soundPlayback" value="players">
+                    Play sounds on all players' clients
+                </label>
+            </div>
+            <button type="submit" class="button host-button">Create Quiz</button>
+        </form>
+    </div>
+    <script src="js/quizConfigure.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

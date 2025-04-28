@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Quiz Session</title>
+    <link rel="stylesheet" href="css/hostUI.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Host a Quiz Session</h1>
+        <form id="createSessionForm">
+            <input type="text" id="sessionName" class="input-field" placeholder="Session Name" required>
+            <button type="submit" class="button host-button">Create Session</button>
+        </form>
+        <h2>Active Sessions</h2>
+        <ul id="activeSessionsList"></ul>
+    </div>
+    <button class = "backButton" onclick="window.location.href = 'index.html'">Back</button>
+    <script src="js/hostUI.js"></script>
+</body>
+</html>

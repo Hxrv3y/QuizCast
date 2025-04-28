@@ -1,0 +1,27 @@
+[
+    {
+      "question": "What is the largest planet in our solar system?",
+      "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+      "correctAnswer": "Jupiter"
+    },
+    {
+      "question": "Who was the first person to walk on the moon?",
+      "options": ["Yuri Gagarin", "Buzz Aldrin", "Neil Armstrong", "Michael Collins"],
+      "correctAnswer": "Neil Armstrong"
+    },
+    {
+      "question": "What is the name of the galaxy that contains our Solar System?",
+      "options": ["Andromeda", "Milky Way", "Whirlpool", "Sombrero"],
+      "correctAnswer": "Milky Way"
+    },
+    {
+      "question": "What is the name of the first artificial Earth satellite launched by the Soviet Union in 1957?",
+      "options": ["Apollo 11", "Sputnik 1", "Voyager 1"],
+      "correctAnswer": "Sputnik 1"
+    },
+    {
+      "question": "What is the name of the force holding us to the Earth?",
+      "options": ["Magnetism", "Gravity", "Friction", "Tension"],
+      "correctAnswer": "Gravity"
+    }
+  ]

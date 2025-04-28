@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Register</h1>
+        <input type="text" id="newUsername" class="input-field" placeholder="Username" required>
+        <input type="password" id="newPassword" class="input-field" placeholder="Password" required>
+        <select id="role" class="input-field" required>
+            <option value="" disabled selected>Select Role</option>
+            <option value="host">Host</option>
+            <option value="player">Player</option>
+        </select>
+        <button class="button register-button" onclick="register()">Register</button>
+    </div>
+
+    <script src="js/register.js"></script>
+
+</body>
+</html>

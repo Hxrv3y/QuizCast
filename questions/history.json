@@ -1,0 +1,32 @@
+[
+    {
+      "question": "Who was the first emperor of Rome?",
+      "options": ["Julius Caesar", "Augustus", "Nero", "Caligula"],
+      "correctAnswer": "Augustus"
+    },
+    {
+      "question": "What is the ancient name of the city of Istanbul?",
+      "options": ["Byzantium", "Constantinople", "Antioch", "Ephesus"],
+      "correctAnswer": "Constantinople"
+    },
+    {
+      "question": "Which ancient civiliation built the pyramids?",
+      "options": ["Mesopotamians", "Romans", "Greeks", "Egyptians"],
+      "correctAnswer": "Egyptians"
+    },
+    {
+      "question": "In which city would you find the famous historical site known as the Colosseum?",
+      "options": ["Athens", "Rome", "Cairo"],
+      "correctAnswer": "Rome"
+    },
+    {
+      "question": "In which year did the Berlin Wall fall, symbolizing the end of the Cold War in Europe?",
+      "options": ["1985", "1989", "1991"],
+      "correctAnswer": "1989"
+    },
+    {
+      "question": "Who was the first president of the United States?",
+      "options": ["Thomas Jefferson", "George Washington", "John Adams", "James Madison"],
+      "correctAnswer": "George Washington"
+    }
+  ]

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player UI</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Join Quiz</h1>
+        <div id="quizCodeContainer">
+            <h2>Join Code: <span id="quizCode"></span></h2>
+        </div>
+        <form id="teamNameForm">
+            <h3>Enter Your Team Name</h3>
+            <input type="text" id="teamName" class="input-field" placeholder="Team Name" required>
+            <button type="submit" class="button join-button">Save Team Name</button>
+        </form>
+        <form id="soundSelectionForm" style="display: none;">
+            <h3>Select Your Winning Sound</h3>
+            <select id="winningSound" class="input-field" required>
+                <option value="" disabled selected>Select Sound</option>
+            </select>
+            <button type="submit" class="button join-button">Save Selection</button>
+        </form>
+        <div id="previewContainer" style="display: none;">
+            <button id="previewButton" class="button join-button">Preview Sound</button>
+        </div>
+        <button id="nextButton" class="button host-button" style="display: none;" onclick="redirectToWaitingRoom()">Next</button>
+    </div>
+    <script src="js/playerUI.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Cast Main</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Quiz Cast</h1>
+
+        <button id="hostButton" class="button host-button" onclick="window.location.href = 'hostUI.html'">Host a Session</button>
+        <a id="joinButton" href="join.html" class="button join-button">Join a Session</a>
+
+        <button class="backButton" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        // Check if the user is logged in using sessionStorage
+        if (!sessionStorage.getItem('loggedIn')) {
+            window.location.href = 'login.html';
+        } else {
+            const username = sessionStorage.getItem('username');
+            console.log('Logged in as:', username); // Log the username
+            fetch('http://localhost:3000/getUserRole', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('User role:', data.role); // Log the user role
+                const hostButton = document.getElementById('hostButton');
+                const joinButton = document.getElementById('joinButton');
+                if (data.role === 'host') {
+                    console.log('User is a host');
+                    hostButton.style.display = 'block';
+                } else {
+                    console.log('User is not a host');
+                    hostButton.style.backgroundColor = 'grey';
+                    hostButton.style.cursor = 'not-allowed';
+                    hostButton.onclick = null; // Disable the button
+                }
+                console.log('Host button display:', hostButton.style.display);
+                console.log('Join button display:', joinButton.style.display);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    
+        // Logout function to clear sessionStorage
+        function logout() {
+            sessionStorage.clear();
+            window.location.href = 'login.html';
+        }
+    </script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
