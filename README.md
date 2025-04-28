@@ -1,10 +1,10 @@
 # QuizCast
 Source code for Computer Science NEA (Non Exam Assessment)
 
-#Required
+# Required
 Node JS
 
-#How to run
+# How to run
 
 Open command prompt
 
